@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruben van Gulik</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css"href="http://fonts.googleapis.com/css?family=Vollkorn">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body id="{{ request.endpoint }}">
+    <div id="container">
+        <header>
+            <h1 id="name"><a href="{{ url_for('info') }}">Ruben van Gulik</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('cycling') }}">Cycling</a></li>
+                    <li><a href="{{ url_for('coding') }}">Coding</a></li>
+                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('info') }}">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+        {% block content %}{% endblock %}
+        </article>
+        <footer>
+            © 2012 Ruben van Gulik
+        </footer>
+    </div>
+</body>
+</html>

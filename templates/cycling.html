@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Pijnacker to Rome</h1>
+<p>In the summer of 2012 I cycled to from my hometown of Pijnacker to the city of Rome. During this 30-day journey I covered a total of 2200 km.</p>
+<p>Here is a map of the route:</p>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApkR8zthheEP__jfG02h2xbKxluOTX8zA&sensor=false"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var mapOptions = {
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var trackLayer = new google.maps.KmlLayer('https://dl.dropbox.com/u/20834329/Rome/Tilburg-Rome.kmz');
+        trackLayer.setMap(map);
+    });
+</script>
+<div id="map_canvas" style="width:100%; height:400px"></div>
+{% endblock %}
