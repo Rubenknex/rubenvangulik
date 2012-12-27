@@ -58,10 +58,10 @@ footer {
 /* SECTIONS */
 /************/
 
-#cycling { background-image: url('green.png'); }
-#coding { background-image: url('red.png'); }
-#blog { background-image: url('blue.png'); }
-#info { background-image: url('orange.png'); }
+#cycling { background-image: url('green.jpg'); }
+#coding { background-image: url('red.jpg'); }
+#blog { background-image: url('blue.jpg'); }
+#info { background-image: url('orange.jpg'); }
 
 /**************/
 /* TYPOGRAPHY */
