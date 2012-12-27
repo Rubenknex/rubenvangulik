@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruben van Gulik</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css"href="http://fonts.googleapis.com/css?family=Vollkorn">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body id="cycling">
+    <div id="container">
+        <header>
+            <h1 id="name"><a href="/">Ruben van Gulik</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/cycling/">Cycling</a></li>
+                    <li><a href="/coding/">Coding</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+        
+<h1>Pijnacker to Rome</h1>
+<p>In the summer of 2012 I cycled to from my hometown of Pijnacker to the city of Rome. During this 30-day journey I covered a total of 2200 km.</p>
+<p>Here is a map of the route:</p>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApkR8zthheEP__jfG02h2xbKxluOTX8zA&sensor=false"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var mapOptions = {
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var trackLayer = new google.maps.KmlLayer('https://dl.dropbox.com/u/20834329/Rome/Tilburg-Rome.kmz');
+        trackLayer.setMap(map);
+    });
+</script>
+<div id="map_canvas" style="width:100%; height:400px"></div>
+
+        </article>
+        <footer>
+            © 2012 Ruben van Gulik
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/**********/
+/* LAYOUT */
+/**********/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+#container {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1em auto;
+    text-align: left;
+    background-color: white;
+}
+
+#name {
+    margin: 1.2em 0 0.4em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.2em;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.65em;
+}
+
+article {
+    max-width: 35em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+article:before, article:after {
+    content: ' ';
+    display: block;
+    border-top: 1px solid rgb(220, 220, 220);
+    padding-bottom: 1em;
+}
+
+footer {
+    margin-bottom: 1.5em;
+}
+
+/************/
+/* SECTIONS */
+/************/
+
+#cycling { background-image: url('green.png'); }
+#coding { background-image: url('red.png'); }
+#blog { background-image: url('blue.png'); }
+#info { background-image: url('orange.png'); }
+
+/**************/
+/* TYPOGRAPHY */
+/**************/
+
+body {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.0em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+article a {
+    color: #ad4545;
+}
+
+#name {
+    font-size: 1.5em;
+}
+
+nav a {
+    font-size: 0.8em;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+}
